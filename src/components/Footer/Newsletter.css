@@ -1,0 +1,64 @@
+.newsletter {
+   padding: 2rem 4rem;
+   border: 1px solid var(--color-golden);
+   background: var(--color-black);
+   z-index: 999;
+}
+
+.newsletter-content {
+   text-align:  center;
+}
+
+.newsletter-content p {
+   margin-top: 1rem;
+}
+
+.newsletter-input {
+   flex-direction: row;
+   margin-top: 3rem;
+}
+
+.newsletter-input input {
+   width: 620px;
+   border: 1px solid var(--color-golden);
+   border-radius: 5px;
+   font-family: var(--font-base);
+   font-size: 1rem;
+   font-weight: 600;
+   line-height: 28px;
+   letter-spacing: 0.04em;
+   color: var(--color-white);
+   margin-right: 2rem;
+   padding: 0.75rem 1rem;
+   background-color: var(--color-black);
+}
+
+.newsletter-input button {
+   width: max-content;
+}
+
+@media screen and (max-width: 990px) {
+   .newsletter-input {
+      flex-direction: column;
+      width: 100%;
+   }
+
+   .newsletter-input input {
+      margin: 0 0 2rem 0;
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+   .newsletter {
+      padding: 2rem 0;
+      border: none;
+   }
+}
+
+@media screen and (max-width: 300px) {
+   .newsletter-content h1 {
+      font-size: 32px;
+      line-height: 50px;
+   }
+}
